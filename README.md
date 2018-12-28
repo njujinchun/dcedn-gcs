@@ -1,5 +1,5 @@
 ## Deep Convolutional Encoder-Decoder Networks for Dynamical Multi-Phase Flow Models
-[Deep Convolutional Encoder-Decoder Networks for Uncertainty Quantification of Dynamic Multiphase Flow in Heterogeneous Media](https://arxiv.org/abs/1807.00882)
+[Deep Convolutional Encoder-Decoder Networks for Uncertainty Quantification of Dynamic Multiphase Flow in Heterogeneous Media](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018WR023528)
 
 Shaoxing Mo, [Yinhaozhu](https://scholar.google.com/citations?user=SZmaVZMAAAAJ&hl=en&oi=sra), [Nicholas Zabaras](https://www.zabaras.com/), [Xiaoqing Shi](https://scholar.google.com/citations?user=MLKqgKoAAAAJ&hl=en&oi=sra), Jichun Wu
 
@@ -29,7 +29,7 @@ The datasets used, pretrained models, input files for the forward model, and nee
 
 # Repo Structure
 ![alt](https://github.com/njujinchun/dcedn-gcs/blob/master/images/Repo-structure.png)
-Illustration of the repo structure. The training data are obtained by reorganizing the original data (see Section 3.3 in [Mo et al. (2018)](https://arxiv.org/abs/1807.00882)) to characterize the system dynamics.
+Illustration of the repo structure. The training data are obtained by reorganizing the original data (see Section 3.3 in [Mo et al. (2018)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018WR023528)) to characterize the system dynamics.
 
 # Start with a Pre-trained Model
 The pretrained models of networks [with the MSE loss](https://drive.google.com/file/d/1VtcpywvbUzTEXr1IU7GZtewXi1UWCuz2/view?usp=sharing) and [with the MSE-BCE loss](https://drive.google.com/open?id=1-CPrGxw6fnIeXFRr1sHhbnOZffGoyWT7) are available on Google Drive. One can plot the images provided using the script "post_usePretrainedModel.py".
@@ -39,32 +39,27 @@ The pretrained models of networks [with the MSE loss](https://drive.google.com/f
 python3 train_time.py
 ```
 # Citation
-See [Mo et al. (2018)](https://arxiv.org/abs/1807.00882) for more information. If you find this repo useful for your research, please consider to cite:
+See [Mo et al. (2018)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018WR023528) for more information. If you find this repo useful for your research, please consider to cite:
 ```
-@ARTICLE{2018arXiv180700882M,
-       author = {{Mo}, Shaoxing and {Zhu}, Yinhao and {Zabaras}, Nicholas and {Shi},
-        Xiaoqing and {Wu}, Jichun},
-        title = "{Deep convolutional encoder-decoder networks for uncertainty
-        quantification of dynamic multiphase flow in heterogeneous media}",
-      journal = {arXiv e-prints},
-     keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
-         year = 2018,
-        month = Jul,
-          eid = {arXiv:1807.00882},
-        pages = {arXiv:1807.00882},
-archivePrefix = {arXiv},
-       eprint = {1807.00882},
- primaryClass = {stat.ML},
-       adsurl = {https://ui.adsabs.harvard.edu/\#abs/2018arXiv180700882M},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+@article{moetal2018,
+author = {Mo, Shaoxing and Zhu, Yinhao and Zabaras, Nicholas, J and Shi, Xiaoqing and Wu, Jichun},
+title = {Deep convolutional encoder-decoder networks for uncertainty quantification of dynamic multiphase flow in heterogeneous media},
+journal = {Water Resources Research},
+volume = {},
+number = {},
+pages = {},
+keywords = {Multiphase flow, geological carbon storage, uncertainty quantification, deep neural networks, high-dimensionality, response discontinuity},
+doi = {10.1029/2018WR023528},
+url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018WR023528},
+eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2018WR023528},
 }
 ```
 or:
 ```
-Mo, S., Zhu, Y., Zabaras, N., Shi, X., & Wu, J. (2018). Deep convolutional encoder-decoder networks for 
-uncertainty quantification of dynamic multiphase flow in heterogeneous media. arXiv preprint arXiv:1807.00882.
+Mo, S., Y. Zhu, N.J Zabaras, X. Shi, and J., Wu. (2018), Deep convolutional encoder‐decoder networks for 
+uncertainty quantification of dynamic multiphase flow in heterogeneous media, Water Resources Research, 
+https://doi.org/10.1029/2018WR023528
 ```
-
 Related article: [Zhu, Y., & Zabaras, N. (2018). Bayesian deep convolutional encoder–decoder networks for surrogate modeling and uncertainty quantification. J. Comput. Phys., 366, 415-447.](https://www.sciencedirect.com/science/article/pii/S0021999118302341)
 
 # Questions
